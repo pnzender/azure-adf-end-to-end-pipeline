@@ -1,0 +1,17 @@
+{
+    "name": "ls_onprem_file",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "FileServer",
+        "typeProperties": {
+            "host": "C:\\ADFProjectFiles",
+            "userId": "<USER_ID>@gmail.com",
+            "encryptedCredential": "<ENCRYPTED_CREDENTIAL>"
+        },
+        "connectVia": {
+            "referenceName": "pnz-SelfHosted",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
